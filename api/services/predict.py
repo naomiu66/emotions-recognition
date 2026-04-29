@@ -1,6 +1,6 @@
 import torch
 
-def predict(model, tokenizer, input):
+def fit(model, tokenizer, input):
     tokenized_input = tokenizer(
         input,
         return_tensors="pt",
