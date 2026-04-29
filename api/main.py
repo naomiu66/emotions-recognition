@@ -1,8 +1,16 @@
 from transformers import BertForSequenceClassification, AutoTokenizer
 import torch
 import os
+import fastapi
 
-root_path = os.getcwd()
+repo = "whoaasd/emotions-model"
 
-model = BertForSequenceClassification.from_pretrained(f'{root_path}/models/model')
-tokenizer = AutoTokenizer.from_pretrained(f'{root_path}/models/tokenizer')
+# root_path = os.getcwd()
+
+# model = BertForSequenceClassification.from_pretrained(f'{root_path}/models/model')
+# tokenizer = AutoTokenizer.from_pretrained(f'{root_path}/models/tokenizer')
+
+model = BertForSequenceClassification.from_pretrained(repo)
+tokenizer = AutoTokenizer.from_pretrained(repo)
+
+print(model)

@@ -25,6 +25,9 @@ Thumbs.db
 *.tmp
 *.cache
 
+# .env
+.env
+
 # Data / models
 data/
 models/
