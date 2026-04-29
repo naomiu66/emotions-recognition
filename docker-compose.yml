@@ -1,0 +1,7 @@
+services:
+  emotions-model-api:
+    build: .
+    ports:
+     - "${PORT}:${PORT}"
+    env_file:
+      - .env
